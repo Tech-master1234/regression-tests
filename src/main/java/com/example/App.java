@@ -6,7 +6,7 @@ public class App {
     }
 
     public int add(int a, int b) {
-        return a - b;
+        return a + b;
     }
 
     // Add more methods here that your regression tests will cover
