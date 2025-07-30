@@ -4,13 +4,16 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class AppTest {
+
     @Test
-    public void testAddition() {
-        assertEquals(4, 2 + 2);
+    public void testAdd() {
+        App app = new App();
+        int result = app.add(3, 4);
+        assertEquals(7, result);
     }
 
     @Test
-    public void testFailure() {
-        assertTrue("Expected true", true); // placeholder
+    public void sanityCheck() {
+        assertTrue(true); // Always passes, good as a build check
     }
 }
